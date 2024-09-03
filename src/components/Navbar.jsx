@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/AchiraLogo.png";
+import logo from "../assets/a1.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
