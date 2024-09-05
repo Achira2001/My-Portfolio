@@ -15,21 +15,21 @@ export const PROJECTS = [
     image: project1,
     description:
       "Saraya is a web application with a shopping cart to sell spices online and an agent management system of Saraya.",
-    technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
+    technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
   },
   {
     title: "Food Delivery App",
     image: project2,
     description:
       "Through the Food Delivery App, one can log into the website and order the required food and then view the ordered food list.",
-    technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
+    technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["HTML", "CSS", "React", "Tailwind"],
   },
   {
     title: "Theatre Booking System",
