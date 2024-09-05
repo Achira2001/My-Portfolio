@@ -3,6 +3,8 @@ import { SiMongodb } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobeillustrator } from "react-icons/si";
 import { animate, motion } from "framer-motion";
 
 const iconVarients = (duration) => ({
@@ -66,6 +68,20 @@ const Technologies = () => {
         animate="animate"
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <BiLogoPostgresql className="text-7xl text-sky-700"/>
+        </motion.div>
+        <motion.div 
+        variants={iconVarients(4)}
+        initial="initial" 
+        animate="animate"
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiAdobephotoshop className="text-7xl text-sky-700"/>
+        </motion.div>
+        <motion.div 
+        variants={iconVarients(4)}
+        initial="initial" 
+        animate="animate"
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiAdobeillustrator className="text-7xl text-sky-700"/>
         </motion.div>
       </motion.div>
     </div>
