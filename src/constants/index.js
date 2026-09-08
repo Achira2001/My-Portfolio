@@ -2,8 +2,8 @@ import project1 from "../assets/projects/saraya.png";
 import project2 from "../assets/projects/food.png";
 import project3 from "../assets/projects/CINEMA.png";
 import project4 from "../assets/projects/ims.png";
-import project5 from "../assets/projects/ceytour.png";
-import project6 from "../assets/projects/project-6.jpg";
+import project5 from "../assets/projects/ss.png";
+import project6 from "../assets/projects/fyp.png";
 import project7 from "../assets/projects/sp.jpg";
 import project8 from "../assets/projects/gp.jpg";
 
@@ -32,7 +32,7 @@ export const PROJECTS = [
       "REST APIs",
       "Tailwind CSS"
     ],
-    githubLink: ""
+    githubLink: "https://ah-stores-lovat.vercel.app/"
   },
   {
     title: "AI-Powered Smart Health Assistant",
