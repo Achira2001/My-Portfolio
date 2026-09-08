@@ -5,6 +5,7 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Extra from './components/Extra';
+import Experience from './components/Experience';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Navbar />
       <Hero/>
       <About/>
+      <Experience />
       <Projects/>
       <Technologies/>
       <Extra/>

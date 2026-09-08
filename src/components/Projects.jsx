@@ -3,71 +3,108 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
-
+    <div className="border-b border-neutral-900 pb-16">
+      {/* Section Title */}
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="my-10 text-center text-4xl lg:my-20"
+        className="my-10 text-center text-4xl font-semibold lg:my-20"
       >
         Projects
       </motion.h1>
 
-      <div>
-        {PROJECTS.map((projects, index) => (
+      {/* Projects */}
+      <div className="space-y-16">
+        {PROJECTS.map((project, index) => (
           <div
             key={index}
-            className="mb-10 flex flex-wrap gap-8 lg:justify-center"
+            className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-center"
           >
-
-            <motion.div
-  whileInView={{ opacity: 1, x: 0 }}
-  initial={{ opacity: 0, x: -100 }}
-  transition={{ duration: 1 }}
-  className="w-full lg:w-2/5"
->
-  <a
-    href={projects.githubLink}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block"
-  >
-    <img
-      src={projects.image}
-      alt={projects.title}
-      className="mb-6 h-72 w-full rounded-lg object-cover"
-    />
-  </a>
-</motion.div>
-
-
+            {/* Project Image */}
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-2xl lg:w-3/4"
+              initial={{ opacity: 0, x: -80 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-[42%]"
             >
+              {project.liveLink || project.githubLink ? (
+                <a
+                  href={project.liveLink || project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-64 w-full rounded-xl object-cover shadow-lg transition-transform duration-300 hover:scale-[1.02] sm:h-72"
+                  />
+                </a>
+              ) : (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-64 w-full rounded-xl object-cover shadow-lg sm:h-72"
+                />
+              )}
+            </motion.div>
 
-              <h6 className="mb-2 font-semibold">
-                {projects.title}
-              </h6>
+            {/* Project Details */}
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: 80 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+              className="w-full lg:w-[48%]"
+            >
+              {/* Title */}
+              <h2 className="mb-3 text-xl font-semibold">
+                {project.title}
+              </h2>
 
-              <p className="mb-4 text-justify text-neutral-400">
-                {projects.description}
+              {/* Description */}
+              <p className="mb-5 text-justify leading-7 text-neutral-400">
+                {project.description}
               </p>
 
-              <div className="flex flex-wrap justify-center gap-2 lg:justify-start">
-                {projects.technologies.map((tech, index) => (
+              {/* Technologies */}
+              <div className="mb-6 flex flex-wrap justify-center gap-2 lg:justify-start">
+                {project.technologies.map((tech, techIndex) => (
                   <span
-                    key={index}
-                    className="rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                    key={techIndex}
+                    className="rounded-md bg-neutral-800 px-3 py-1.5 text-sm font-medium text-purple-400"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
 
+              {/* Project Links */}
+              <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-700"
+                  >
+                    Live Demo
+                  </a>
+                )}
+
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-md border border-neutral-700 px-4 py-2 text-sm font-medium text-neutral-300 transition-colors hover:bg-neutral-800 hover:text-white"
+                  >
+                    GitHub
+                  </a>
+                )}
+              </div>
             </motion.div>
           </div>
         ))}

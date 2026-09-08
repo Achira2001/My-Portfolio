@@ -35,6 +35,14 @@ const Navbar = () => {
           <FaGithub />
         </a>
 
+        <a
+  href="/AchiraCV.pdf"
+  download
+  className="rounded bg-white px-4 py-2 text-sm font-medium text-neutral-900 hover:bg-neutral-200"
+>
+  Download CV
+</a>
+
         {/* <a
           href="https://www.instagram.com/your-username/"
           target="_blank"

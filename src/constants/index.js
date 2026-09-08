@@ -7,22 +7,24 @@ import project6 from "../assets/projects/fyp.png";
 import project7 from "../assets/projects/sp.jpg";
 import project8 from "../assets/projects/gp.jpg";
 
-export const HERO_CONTENT = `Full Stack Developer specializing in MERN and Next.js, with hands-on experience building web applications since 2022. I have completed a BEng (Hons) in Software Engineering from the University of Westminster and gained professional software engineering experience at SLT-MOBITEL. I build responsive, scalable, and user-focused applications using React.js, Next.js, TypeScript, Node.js, Express.js, and MongoDB.`;
+export const HERO_CONTENT = `Full Stack Developer specializing in MERN and Next.js, with 1 year of professional software engineering experience at SLT-Mobitel and hands-on development experience since 2022. BEng (Hons) Software Engineering graduate from the University of Westminster, experienced in building scalable, responsive web applications using React.js, Next.js, TypeScript, Node.js, Express.js, and MongoDB.`;
 
-export const ABOUT_TEXT = `I am a Full Stack Developer with a BEng (Hons) in Software Engineering from the University of Westminster and one year of professional software engineering experience at SLT-MOBITEL. I have been developing software and working with modern web technologies since 2022, building academic, personal, and production-oriented applications.
+export const ABOUT_TEXT = `I am a Full Stack Developer and BEng (Hons) Software Engineering graduate from the University of Westminster, with 1 year of professional software engineering experience at SLT-Mobitel and hands-on software development experience since 2022.
 
-My core expertise includes the MERN stack and Next.js, with a strong focus on React.js, TypeScript, Node.js, Express.js, MongoDB, RESTful APIs, authentication, role-based access control, responsive UI development, and Git/GitHub workflows.
+My core expertise is in the MERN stack and Next.js, with a strong focus on React.js, TypeScript, Node.js, Express.js, MongoDB, RESTful APIs, authentication, role-based access control, responsive UI development, and Git/GitHub.
 
-During my industry placement at SLT-MOBITEL, I contributed to full-stack software projects including a Cinema Seat Reservation System and an enterprise Internship Management System. I also developed an AI-powered Smart Health Assistant as my Final Year Project, integrating a MERN web application with Python-based machine learning models.
+During my Software Engineering Internship at SLT-MOBITEL, I contributed to production-oriented applications including a Cinema Seat Reservation System and an enterprise Internship Management System. I worked on frontend and backend development, REST APIs, database management, authentication, testing, debugging, and collaborative development.
 
-I enjoy solving software engineering problems, learning modern technologies, and building reliable applications that provide meaningful user experiences. I am currently seeking opportunities as a Full Stack Developer, Software Engineer, or Associate Software Engineer.`;
+My Final Year Project was an AI-Powered Smart Health Assistant, where I integrated a MERN web application with Python-based XGBoost machine learning models and a rule-based recommendation engine.
+
+I enjoy solving software engineering problems, learning modern technologies, and building reliable, user-focused applications. I am currently seeking opportunities as a Full Stack Developer, Software Engineer, or Associate Software Engineer.`;
 
 export const PROJECTS = [
   {
     title: "Shopstore E-Commerce Platform",
     image: project5,
     description:
-      "A modern full-stack e-commerce platform designed for online retail, featuring product management, shopping cart functionality, authentication, dynamic filtering, and responsive user interfaces.",
+      "A full-stack e-commerce platform designed for online retail, featuring product management, authentication, shopping cart functionality, dynamic filtering, colour variants, checkout workflows, and responsive UI.",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -32,13 +34,15 @@ export const PROJECTS = [
       "REST APIs",
       "Tailwind CSS"
     ],
-    githubLink: "https://ah-stores-lovat.vercel.app/"
+    liveLink: "https://ah-stores-lovat.vercel.app/",
+    githubLink: ""
   },
+
   {
     title: "AI-Powered Smart Health Assistant",
     image: project6,
     description:
-      "A full-stack AI-powered health assistant developed as a Final Year Project. The application provides personalized dietary recommendations, health tracking, medical report processing, and medication scheduling by integrating a MERN application with Python-based machine learning models.",
+      "A full-stack AI-powered health assistant developed as a Final Year Project. It provides personalized dietary recommendations, health tracking, medical report processing, and medication scheduling by integrating a MERN application with Python-based XGBoost machine learning models.",
     technologies: [
       "React.js",
       "Node.js",
@@ -49,13 +53,15 @@ export const PROJECTS = [
       "REST APIs",
       "Material UI"
     ],
-    githubLink: "https://fyp-five-lime.vercel.app/"
+    liveLink: "https://fyp-five-lime.vercel.app/",
+    githubLink: ""
   },
+
   {
     title: "Cinema Seat Reservation System",
     image: project3,
     description:
-      "A full-stack cinema reservation application developed during my Software Engineering Internship at SLT-MOBITEL. The system supports cinema and screening management, seat selection, availability tracking, and reservation workflows.",
+      "A full-stack cinema reservation system developed during my Software Engineering Internship at SLT-MOBITEL. The system supports cinema management, screening management, seat selection, availability tracking, and reservation workflows.",
     technologies: [
       "React.js",
       "Node.js",
@@ -64,8 +70,10 @@ export const PROJECTS = [
       "REST APIs",
       "Git/GitHub"
     ],
+    liveLink: "",
     githubLink: "https://github.com/SAwandya/Reservation-system"
   },
+
   {
     title: "SLT Internship Management System",
     image: project4,
@@ -80,13 +88,15 @@ export const PROJECTS = [
       "REST APIs",
       "Git/GitHub"
     ],
-    githubLink: "https://talenttrail.slt.lk/"
+    liveLink: "https://talenttrail.slt.lk/",
+    githubLink: ""
   },
+
   {
     title: "Saraya Product & Agent Management System",
     image: project1,
     description:
-      "A MERN-stack web application combining an online shopping experience with an agent management system. The application includes authentication, product management, shopping cart functionality, agent roles, and CRUD operations.",
+      "A MERN-stack application combining an online shopping platform with an agent management system. Features include JWT authentication, product management, shopping cart functionality, agent roles, and CRUD operations.",
     technologies: [
       "React.js",
       "Node.js",
@@ -95,14 +105,16 @@ export const PROJECTS = [
       "JWT",
       "Bootstrap"
     ],
+    liveLink: "",
     githubLink:
       "https://github.com/Achira2001/SDGP-Project-Implementation-Saraya-Products-using-Mern-Stack.git"
   },
+
   {
     title: "Food Delivery Application",
     image: project2,
     description:
-      "A full-stack food ordering application that allows users to browse food items, place orders, and manage their ordered food through an interactive web interface.",
+      "A full-stack food ordering application that allows users to browse food items, place orders, and manage orders through an interactive responsive web interface.",
     technologies: [
       "React.js",
       "Node.js",
@@ -111,6 +123,7 @@ export const PROJECTS = [
       "JavaScript",
       "Bootstrap"
     ],
+    liveLink: "",
     githubLink:
       "https://github.com/Achira2001/Food-Delivery-App.git"
   }
